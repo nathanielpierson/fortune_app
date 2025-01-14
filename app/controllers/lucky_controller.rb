@@ -1,0 +1,2 @@
+class LuckyController < ApplicationController
+end
