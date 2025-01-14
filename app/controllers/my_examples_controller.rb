@@ -15,4 +15,13 @@ class MyExamplesController < ApplicationController
     end
     render json: numbray
   end
+    def bottles
+    bottles = []
+    x = 99
+    while x > 0
+      bottles.push("#{x} bottles of beer on the wall, #{x} bottles of beer, take one down pass it around, #{x-1} bottles of beer on the wall")
+    x -= 1
+    end
+    render json: bottles
+  end
 end
